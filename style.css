@@ -292,3 +292,359 @@ button:hover {
     margin-bottom: 20px;
   }
 }
+
+/* Romantic Pink Scrapbook Photo Gallery */
+.photo-gallery {
+  width: min(90%, 850px);
+  margin: 35px auto;
+  text-align: center;
+}
+
+.gallery-title {
+  color: #fff;
+  font-size: clamp(22px, 4vw, 30px);
+  margin-bottom: 25px;
+  text-shadow: 0 3px 12px rgba(255, 80, 150, 0.4);
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.photo-card {
+  width: 190px;
+  padding: 10px 10px 15px;
+  background: #fffafc;
+  border-radius: 4px;
+  box-shadow: 0 8px 25px rgba(100, 20, 60, 0.22);
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-card:nth-child(2) {
+  transform: rotate(3deg);
+}
+
+.photo-card:nth-child(3) {
+  transform: rotate(-2deg);
+}
+
+.photo-card:hover {
+  transform: rotate(0deg) translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(100, 20, 60, 0.3);
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.photo-card p {
+  color: #c34c7c;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  margin: 12px 0 0;
+}
+
+@media (max-width: 600px) {
+  .photos {
+    gap: 18px;
+  }
+
+  .photo-card {
+    width: min(42%, 155px);
+    padding: 7px 7px 12px;
+  }
+
+  .photo-card img {
+    height: 145px;
+  }
+}
+
+/* Fix page scrolling */
+html {
+  min-height: 100%;
+  overflow-y: auto;
+}
+
+body {
+  min-height: 100vh;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.scene {
+  min-height: 100vh;
+  height: auto;
+  overflow: visible;
+  padding-bottom: 50px;
+}
+
+.celebration {
+  height: auto;
+  overflow: visible;
+  padding-bottom: 30px;
+}
+
+/* Fix page scrolling */
+html {
+  min-height: 100%;
+  overflow-y: auto;
+}
+
+body {
+  min-height: 100vh;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.scene {
+  min-height: 100vh;
+  height: auto;
+  overflow: visible;
+  padding-bottom: 50px;
+}
+
+.celebration {
+  height: auto;
+  overflow: visible;
+  padding-bottom: 30px;
+}
+
+/* Luxury Strawberry Pink Birthday Cake */
+
+.cake {
+  filter: drop-shadow(0 15px 15px rgba(180, 70, 120, 0.2));
+}
+
+.top-layer {
+  background: linear-gradient(135deg, #fff0f5, #ffc5dc, #ff9fc5);
+  border-radius: 22px 22px 12px 12px;
+  box-shadow: inset 0 8px 12px rgba(255,255,255,0.7);
+}
+
+.middle-layer {
+  background: linear-gradient(135deg, #ffe4ef, #f7a8ca, #ec79aa);
+  border-radius: 18px;
+  box-shadow: inset 0 8px 12px rgba(255,255,255,0.45);
+}
+
+.bottom-layer {
+  background: linear-gradient(135deg, #ffd6e8, #f28db8, #d95d96);
+  border-radius: 18px;
+  box-shadow: inset 0 8px 12px rgba(255,255,255,0.4);
+}
+
+.cake-plate {
+  background: linear-gradient(180deg, #fff9fc, #f5c7dc);
+  border: 3px solid #fff;
+  box-shadow: 0 8px 15px rgba(180, 70, 120, 0.2);
+}
+
+
+/* Safe strawberry cake decorations */
+
+.cake,
+.cake-area {
+  overflow: visible;
+}
+
+/* Keep all three cake layers in their original positions */
+.top-layer,
+.middle-layer,
+.bottom-layer {
+  position: absolute;
+}
+
+/* Strawberries */
+.cake-fruits {
+  position: absolute;
+  top: -37px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 23px;
+  z-index: 5;
+  filter: drop-shadow(0 3px 3px rgba(150, 50, 90, .2));
+}
+
+/* Tiny hearts */
+.cake-hearts {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  z-index: 5;
+}
+
+/* Cream icing */
+.top-layer::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: -9px;
+  width: 90%;
+  height: 18px;
+  background: #fff4f8;
+  border-radius: 0 0 50% 50%;
+  box-shadow: 0 4px 5px rgba(190, 90, 130, .15);
+  z-index: 2;
+}
+
+/* Golden cake decorations */
+.middle-layer::after,
+.bottom-layer::after {
+  content: "✦  •  ✦  •  ✦";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff4c9;
+  font-size: 17px;
+}
+
+/* Correct cake and candle alignment */
+
+.cake-area {
+  position: relative;
+  width: 310px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.candles {
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+}
+
+.cake {
+  margin: 0 auto;
+}
+
+.celebration {
+  width: 100%;
+  display: none;
+  align-items: center;
+  text-align: center;
+}
+
+.photo-gallery {
+  position: relative;
+  width: min(90%, 850px);
+  margin: 35px auto;
+}
+
+.photos {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Smooth scrolling and performance improvements */
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+}
+
+.scene {
+  justify-content: flex-start;
+  min-height: 100vh;
+  overflow: visible;
+  padding-top: 35px;
+  padding-bottom: 65px;
+}
+
+.intro {
+  min-height: calc(100vh - 100px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.celebration {
+  flex-shrink: 0;
+  padding-bottom: 50px;
+}
+
+.star {
+  will-change: transform, opacity;
+}
+
+.confetti-piece {
+  will-change: transform, opacity;
+}
+
+.photo-card img {
+  loading: lazy;
+}
+
+/* Reduce animations on devices that prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* White dripping cream on the cake */
+
+.middle-layer::before,
+.bottom-layer::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 19px;
+  background: #fff7fb;
+  border-radius: 12px 12px 5px 5px;
+  clip-path: polygon(
+    0 0, 100% 0, 100% 75%,
+    90% 75%, 87% 100%, 82% 75%,
+    65% 75%, 62% 95%, 57% 75%,
+    35% 75%, 32% 100%, 27% 75%,
+    10% 75%, 7% 95%, 4% 75%, 0 75%
+  );
+  z-index: 3;
+}
+
+/* Tiny golden pearls */
+.middle-layer {
+  background-image:
+    radial-gradient(circle, #fff0b8 2px, transparent 3px),
+    linear-gradient(90deg, #ffe4ef, #f7a8ca, #ec79aa);
+  background-size: 28px 22px, 100% 100%;
+}
+
+.bottom-layer {
+  background-image:
+    radial-gradient(circle, #fff0b8 2px, transparent 3px),
+    linear-gradient(90deg, #ffd6e8, #f28db8, #d95d96);
+  background-size: 32px 25px, 100% 100%;
+}
+
+

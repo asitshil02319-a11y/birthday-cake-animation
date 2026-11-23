@@ -10,7 +10,7 @@ const birthdayMessage = document.querySelector(".birthday-message");
 const confetti = document.getElementById("confetti");
 
 // Customize the birthday name here
-const birthdayName = "Tanushree";
+const birthdayName = "Golu bubu";
 
 let timers = [];
 
